@@ -1,0 +1,32 @@
+{
+  "name": "html-dom-events-ext",
+  "version": "0.0.0",
+  "description": "Extensions and utilities related to HTML DOM Events interfaces",
+  "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
+  "keywords": [
+    "html",
+    "dom",
+    "events",
+    "click",
+    "form",
+    "submit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/medikoo/html-dom-event-ext.git"
+  },
+  "dependencies": {
+    "es5-ext": "~0.10.5"
+  },
+  "devDependencies": {
+    "tad": "~0.2.1",
+    "xlint": "~0.2.1",
+    "xlint-jslint-medikoo": "~0.1.2"
+  },
+  "scripts": {
+    "lint": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --no-cache --no-stream",
+    "lint-console": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --watch",
+    "test": "node node_modules/tad/bin/tad"
+  },
+  "license": "MIT"
+}
