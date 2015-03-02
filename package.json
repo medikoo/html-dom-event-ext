@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "dom-ext": "git://github.com/medikoo/dom-ext.git",
+    "html-dom-ext": "git://github.com/medikoo/html-dom-ext.git",
     "memoizee": "~0.3.8"
   },
   "devDependencies": {
