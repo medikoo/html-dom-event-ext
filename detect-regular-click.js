@@ -4,17 +4,17 @@ var memoize      = require('memoizee/weak-plain')
   , htmlDocument = require('dom-ext/html-document/valid-html-document');
 
 module.exports = memoize(function (document) {
-	var isNatural = true, timeout;
+	var isRegular = true, timeout;
 	var reset = function () {
-		isNatural = true;
+		isRegular = true;
 		timeout = null;
 	};
 	htmlDocument(document).addEventListener('click', function (event) {
 		if (event.metaKey || event.ctrlKey || (event.which === 2) || (event.which === 3)) {
-			isNatural = false;
+			isRegular = false;
 			if (timeout) clearTimeout(timeout);
 			timeout = setTimeout(reset, 0);
 		}
 	}, true);
-	return function () { return isNatural; };
+	return function () { return isRegular; };
 });
