@@ -7,7 +7,7 @@ var callable           = require('es5-ext/object/valid-callable')
   , isExternal         = require('html-dom-ext/form/#/is-external');
 
 module.exports = function (document, location, callback/*, options*/) {
-	var isRegularClick, options = Object(arguments[2]), method;
+	var isRegularClick, options = Object(arguments[3]), method;
 
 	(htmlDocument(document) && object(location) && callable(callback));
 	isRegularClick = detectRegularClick(document);
