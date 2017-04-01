@@ -16,13 +16,13 @@
     "url": "git://github.com/medikoo/html-dom-event-ext.git"
   },
   "dependencies": {
-    "es5-ext": "^0.10.12",
-    "dom-ext": "0.0.3",
-    "html-dom-ext": "git://github.com/medikoo/html-dom-ext.git",
-    "memoizee": "^0.4.1"
+    "es5-ext": "^0.10.15",
+    "dom-ext": "^0.1.2",
+    "html-dom-ext": "0.1",
+    "memoizee": "^0.4.4"
   },
   "devDependencies": {
-    "jsdom": "^9.9.1",
+    "jsdom": "^9.12",
     "tad": "^0.2.7",
     "xlint": "^0.2.2",
     "xlint-jslint-medikoo": "^0.1.4"
