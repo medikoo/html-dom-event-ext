@@ -1,3 +1,6 @@
+v0.3.1  --  2017.04.03
+* Fix dependencies configuration
+
 v0.3.0  --  2017.04.03
 * Replace regular click detector, with more rich click event meta resolver.
   Aside of answering information on whether click was regular, it answers what was the eventual
