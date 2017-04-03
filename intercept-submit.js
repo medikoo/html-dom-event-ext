@@ -21,7 +21,7 @@ module.exports = function (document, location, callback/*, options*/) {
 	});
 	document.addEventListener('submit', function (event) {
 		var form = event.target;
-		if (!isRegularClick()) return;
+		if (isRegularClick() === false) return;
 		if (method && (form.method !== method)) return;
 		if (isExternal.call(form, location.href)) return;
 		event.preventDefault();
