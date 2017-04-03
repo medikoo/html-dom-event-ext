@@ -5,8 +5,9 @@ var memoize      = require('memoizee/weak-plain')
 
 module.exports = memoize(function (document) {
 	var isRegular = null
-	  , reset = function () { isRegular = timeout = null; }
-	  , timeout;
+	  , timeout
+	  , reset = function () { isRegular = timeout = null; };
+
 	htmlDocument(document).addEventListener('click', function (event) {
 		isRegular = (!event.metaKey && !event.ctrlKey && (event.which !== 2) && (event.which !== 3));
 		if (timeout) clearTimeout(timeout);
