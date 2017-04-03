@@ -1,3 +1,8 @@
+v0.3.0  --  2017.04.03
+* Replace regular click detector, with more rich click event meta resolver.
+  Aside of answering information on whether click was regular, it answers what was the eventual
+  a[href] target of click
+
 v0.2.0  --  2017.04.03
 - In detectRegularClick resolve to true/false only immediately after actual click. Otherwise `null`
   is returned
