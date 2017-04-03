@@ -16,6 +16,7 @@
     "url": "git://github.com/medikoo/html-dom-event-ext.git"
   },
   "dependencies": {
+    "d": "1",
     "es5-ext": "^0.10.15",
     "dom-ext": "^0.1.2",
     "html-dom-ext": "0.1",
