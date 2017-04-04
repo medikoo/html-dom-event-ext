@@ -26,7 +26,8 @@ module.exports = memoize(function (document) {
 		Object.defineProperties(meta, {
 			isRegular: d('ce',
 				!event.metaKey && !event.ctrlKey && (event.which !== 2) && (event.which !== 3)),
-			aHref: d('ce', target || null)
+			aHref: d('ce', target || null),
+			stamp: d('ce', Date.now())
 		});
 		setTimeout(reset);
 	}, true);
